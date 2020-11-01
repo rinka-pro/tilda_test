@@ -1,0 +1,74 @@
+.order__progress {
+	margin-bottom: 30px;
+}
+
+.steps__list {
+	display: flex;
+	align-items: center;
+	counter-reset: steps;
+	justify-content: space-between;
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+}
+
+.step {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	color: #ddd;
+	width: 110px;
+}
+
+.step__label {
+	position: relative;
+	display: block;
+}
+
+.step__label:before {
+	content: counter(steps);
+	counter-increment: steps;
+	border-radius: 50%;
+	display: block;
+	text-align: center;
+	width: 34px;
+	height: 34px;
+	font-size: 18px;
+	border: 2px solid currentColor;
+	font-weight: 600;
+	color: inherit;
+	background-color: #fff;
+}
+
+.step:not(:first-child):before {
+	content: '';
+	height: 1px;
+	width: 70px;
+	background-color: #ddd;
+	position: absolute;
+	right: 100%;
+	top: 18px;
+}
+
+@media (max-width: 767px) {
+	.step:not(:first-child):before {
+		display: none;
+	}
+}
+
+@media (max-width: 550px) {
+	.steps__list {
+		display: block;
+	}
+	.step {
+		margin-bottom: 15px;
+	}
+}
+
+.step.active {
+	color: var(--color-main);
+}
+
+.step.active:not(:first-child):before {
+	background-color: var(--color-main);
+}

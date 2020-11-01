@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Cart</title>
+	<link rel="stylesheet" href="css/cart.css">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<header class="header">
+		<nav class="main-nav container">
+			<ul class="nav__list">
+				<li class="nav__item nav__item--home">
+					<a href="/" class="nav__link"></a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<main class="page container cart__page">
+		<div class="order__progress">
+			<ul class="steps__list">
+				<li class="step active">
+					<span class="step__label"></span> Корзина
+				</li>
+				<li class="step">
+					<span class="step__label"></span> Оформление
+				</li>
+				<li class="step">
+					<span class="step__label"></span> Доставка
+				</li>
+				<li class="step">
+					<span class="step__label"></span> Оплата
+				</li>
+			</ul>
+		</div>
+		<h1 class="page__title">Корзина</h1>
+		<div class="cart__content" id="cart"></div>
+		<div class="recommendations" id="recommendations">
+			<h3>Вам может понравиться:</h3>
+			<ul class="rec__list">
+				<li class="rec__item">
+					<div class="rec__img">
+						<img src="https://images.unsplash.com/photo-1532298229144-0ec0c57515c7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1416&q=80" alt="Велосипед">
+					</div>
+					<a href="#" class="rec__title">Велосипед</a>
+					<p class="rec__price">26 490&#8381;</p>
+				</li>
+			</ul>
+		</div>
+	</main>
+
+	<script src="js/localStorageUtil.js"></script>
+	<script src="js/productsList.js"></script>
+	<script src="js/CartPage.js"></script>
+
+</body>
+
+</html>

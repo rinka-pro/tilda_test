@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Доставка</title>
+	<link rel="stylesheet" href="css/contactform.css">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<header class="header">
+		<nav class="main-nav container">
+			<ul class="nav__list">
+				<li class="nav__item nav__item--home">
+					<a href="/" class="nav__link"></a>
+				</li>
+			</ul>
+		</nav>
+	</header>
+	<main class="page container cart__page">
+		<div class="order__progress">
+			<ul class="steps__list">
+				<li class="step active">
+					<span class="step__label"></span> Корзина
+				</li>
+				<li class="step active">
+					<span class="step__label"></span> Оформление
+				</li>
+				<li class="step active">
+					<span class="step__label"></span> Доставка
+				</li>
+				<li class="step">
+					<span class="step__label"></span> Оплата
+				</li>
+			</ul>
+		</div>
+		<h1 class="page__title">Выберите способ доставки</h1>
+		<div class="cart__content">
+			<form action="" class="contact__form" id="delivery">
+			</form>
+
+			<form action="" class="contact__form delivery-address" id="delivery_address"></form>
+			<div id="total" class="total__wrapper"></div>
+			<div class="cart__footer" id="delivery_actions">
+			</div>
+		</div>
+
+	</main>
+
+	<script src="js/localStorageUtil.js"></script>
+	<script src="js/productsList.js"></script>
+	<script src="js/TotalSum.js"></script>
+	<script src="js/Delivery.js"></script>
+
+</body>
+
+</html>
